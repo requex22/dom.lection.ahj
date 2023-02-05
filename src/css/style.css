@@ -1,0 +1,21 @@
+body {
+    color: #999;
+}
+.gameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(72, 58, 124)
+}
+.cellWithGoblin{
+    background-image: url('../img/goblin.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
