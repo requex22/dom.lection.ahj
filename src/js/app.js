@@ -6,7 +6,7 @@ function promptBoardSize(){
     result = prompt('Введите размер поля');
   }
 
-  return result
+  return result;
 }
 
 function getRandomNumber(min, max){
@@ -34,7 +34,7 @@ for (let i = 0; i < boardSize * boardSize; i++){
   `)
 }
 
-const cells = gameBoard.querySelectorAll('.cell')
+const cells = gameBoard.querySelectorAll('.cell');
 
 
 gameBoard.style.width = (cells[0].offsetWidth + 20) * boardSize + 'px';
@@ -42,5 +42,5 @@ gameBoard.style.width = (cells[0].offsetWidth + 20) * boardSize + 'px';
 setInterval(() => {
   cells.forEach(item => item.classList.remove('cellWithGoblin'));
 
-  cells[getRandomNumber(0, cells.length)].classList.add('cellWithGoblin')
+  cells[getRandomNumber(0, cells.length)].classList.add('cellWithGoblin');
 }, 1000);
